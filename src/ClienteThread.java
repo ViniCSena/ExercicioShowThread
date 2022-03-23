@@ -66,6 +66,7 @@ public class ClienteThread extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }finally {
+
                 semaphore.release();
             }
         }else{
